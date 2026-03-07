@@ -26,3 +26,4 @@ pwd：カレントディレクトリの絶対パスを出力する
 $ git --version
 git version 2.36.0.windows.1
 ```
+`$ git config --list` にて、config部分をサブコマンド、--list部分をオプションと呼ぶ。  
