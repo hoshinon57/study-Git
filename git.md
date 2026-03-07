@@ -27,3 +27,26 @@ $ git --version
 git version 2.36.0.windows.1
 ```
 `$ git config --list` にて、config部分をサブコマンド、--list部分をオプションと呼ぶ。  
+
+Gitの設定値一覧、および特定の設定値を確認  
+`$ git config --list`  
+`$ git config user.name`
+
+設定値がどのスコープに由来するかを確認  
+`$ git config --list --show-origin`  
+
+設定値の削除  
+`$ git config --local --unset user.name`
+
+user.nameとuser.emailはコミットに記録される。
+
+コミットメッセージ入力時など、Git操作にて利用するエディタをVSCodeに指定する。  
+スコープはlocalではなくglobalで良いと思う。  
+```bash
+$ git config core.editor
+code --wait
+```
+
+デフォルトブランチを変更  
+`$ git config --global init.defaultBranch main`
+
