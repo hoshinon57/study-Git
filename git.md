@@ -1,5 +1,5 @@
 
-**以下、「いちばんやさしいgit&githubの教本」を読みながらキーワードやコマンド結果をメモしたもの**
+## 「いちばんやさしいgit&githubの教本」を読みながらキーワードやコマンド結果をメモしたもの
 
 リポジトリ：コミットをためていく場所  
 クローン：リポジトリをコピーすること  
@@ -50,3 +50,10 @@ code --wait
 デフォルトブランチを変更  
 `$ git config --global init.defaultBranch main`
 
+### Chapter3
+git add: ステージングエリアに登録  
+git commit: コミット  
+git status / diff / log: 状態を確認  
+
+git add . : カレントディレクトリ配下の全てを対象
+git add (ディレクトリ名): ディレクトリ配下のすべてを対象
