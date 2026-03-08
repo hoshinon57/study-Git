@@ -55,5 +55,23 @@ git add: ステージングエリアに登録
 git commit: コミット  
 git status / diff / log: 状態を確認  
 
-git add . : カレントディレクトリ配下の全てを対象
-git add (ディレクトリ名): ディレクトリ配下のすべてを対象
+git add . : カレントディレクトリ配下の全てを対象  
+git add (ディレクトリ名): ディレクトリ配下のすべてを対象  
+ステージングエリアに登録されていれば、git statusにて`Changes to be committed:`の欄に表示される。  
+
+git diff: ワークツリーとステージングエリアの比較  
+git diff --cached: ステージングエリアとGitディレクトリの比較
+
+(vscodeでの)コミットメッセージ入力にて、#から始まる行はコメント行となり、コミットログには反映されない。  
+git commit -m "(1行コミットメッセージ)": vscodeに遷移せずコミット  
+vscodeに遷移せず、2行以上のコミットメッセージを入力したい場合：  
+```bash
+$ git commit -m "update
+> 
+> 3行目入力
+> 4行目入力"
+```
+
+git restore: 変更の取り消し
+git restore (ファイル名): ワークツリーの変更の取り消し(=git addする前の変更)
+git restore --stated (ファイル名): ステージングエリアへの登録を取り消し(=git addのキャンセル)
