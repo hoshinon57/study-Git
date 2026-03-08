@@ -72,6 +72,13 @@ $ git commit -m "update
 > 4行目入力"
 ```
 
-git restore: 変更の取り消し
-git restore (ファイル名): ワークツリーの変更の取り消し(=git addする前の変更)
-git restore --stated (ファイル名): ステージングエリアへの登録を取り消し(=git addのキャンセル)
+git restore: 変更の取り消し  
+git restore (ファイル名): ワークツリーの変更の取り消し(=git addする前の変更)  
+git restore --stated (ファイル名): ステージングエリアへの登録を取り消し(=git addのキャンセル)  
+
+git rm: Git管理下のファイルの削除。「削除した状態」を登録するので、この後コミットする  
+
+git log: コミット履歴の確認  
+git log -p: 差分付き  
+
+### Chapter4
