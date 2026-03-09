@@ -90,3 +90,19 @@ GitHubで使用できる認証方式は以下の2つ。
 | HTTPS | ユーザー名とアクセストークン |
 
 公開鍵の場合、自分のPCにて秘密鍵と公開鍵のペアを作り、公開鍵をGitHubに登録する。  
+
+git remote -v: リモートリポジトリの設定確認 git@github.com で始まっていればSSH接続
+```bash
+$ git remote -v
+origin  git@github.com:hoshinon57/ichiyasaGitSample.git (fetch)
+origin  git@github.com:hoshinon57/ichiyasaGitSample.git (push)
+```
+
+origin: クローン元のリモートリポジトリを表す名前  
+Gitが初期値として"origin"を設定し、これは変えることもできるが、普通はoriginのまま。  
+Gitでは1つのローカルリポジトリに対してリモートリポジトリを複数設定できるらしい。
+
+start (フォルダ名) でエクスプローラーを起動できる。  
+`start .` で作業中のカレントディレクトリを開けるのは便利かも。
+
+### Chapter5
