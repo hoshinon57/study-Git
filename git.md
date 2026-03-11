@@ -61,6 +61,7 @@ git add (ディレクトリ名): ディレクトリ配下のすべてを対象
 
 git diff: ワークツリーとステージングエリアの比較  
 git diff --cached: ステージングエリアとGitディレクトリの比較
+git diff <ブランチ名>: 現在のブランチとの比較
 
 (vscodeでの)コミットメッセージ入力にて、#から始まる行はコメント行となり、コミットログには反映されない。  
 git commit -m "(1行コミットメッセージ)": vscodeに遷移せずコミット  
@@ -74,7 +75,7 @@ $ git commit -m "update
 
 git restore: 変更の取り消し  
 git restore (ファイル名): ワークツリーの変更の取り消し(=git addする前の変更)  
-git restore --stated (ファイル名): ステージングエリアへの登録を取り消し(=git addのキャンセル)  
+git restore --staged (ファイル名): ステージングエリアへの登録を取り消し(=git addのキャンセル)  
 
 git rm: Git管理下のファイルの削除。「削除した状態」を登録するので、この後コミットする  
 
@@ -166,3 +167,10 @@ $ ssh-add ~/.ssh/id_ed25519
 ***
 
 ### Chapter5
+git branch <ブランチ名>: ブランチを作成  
+git switch <ブランチ名>: ブランチを切り替え  
+git statusでも現在のブランチを確認できる  
+```bash
+$ git status
+On branch main
+```
